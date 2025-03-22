@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="eng-ca">
+<!--Note the use of Google Fonts in this exercise (see the below line in my <head> referencing the two fonts I use in the CSS file), Google offers free web fonts and they are *really* easy to implemment, see https://fonts.google.com/ for more info-->
+<head>
+<meta charset="UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+  
+  
+  
+<title>Clarissa Chamberlain Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+/** note I select Pacifico as my body text and Roboto further down the page for my header and link font, I can use these because of the reference in the <head> in the HTML doc **/
+  
+  div {
+    max-width: 1024px;
+  }
+
+  
+body {
+font-family: "Oxygen";
+font-size: 30px;
+background-color: white;
+}
+
+
+/* misc. styling */
+
+ul a {
+color: magenta;
+}
+
+p , h1 , h2 , ul , img {
+margin-left: 0;
+}
+
+img {
+margin-top: 20px;
+display: block;
+}
+
+
+#headline {
+display: block;
+}
+
+#homepage p {
+padding: 1em 1em 1em 20px;
+  display: block;
+  position: absolute;
+  text-align: center;
+  width: 500px;
+  float: right;
+  top: 0.01%;
+    left: 51.5%;
+}
+
+
+  #about p {
+    position: absolute;
+    display: block;
+    text-align: left;
+    width: 13%;
+    top: 60%;
+    left: 2%;
+   font-size: .8em;
+  }
+
+  
+/* headers */
+
+
+h1 {
+  float: left;
+font-size: 3.25em;
+color: black;
+padding: .375em;
+}
+
+h2 {
+font-size: 1.5em;
+background-color: black;
+color: white;
+display: inline-block;
+padding: .375em;
+margin-top: 0;
+margin-bottom: 0;
+  }
+  
+  
+  h1 , li , h2 {
+font-family: "Roboto", sans-serif;
+}
+
+  
+  #about_me h2{
+    position: absolute;
+    display: block;
+    top: 58%;
+    left: 30%;
+  }
+  
+  #about_me p{
+    text-align: center;
+    display: block;
+    position: absolute;
+   width: 30%;
+     top: 64%;
+    right: 65%;
+    font-family: "Oxygen", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  }
+  
+ 
+    
+    @media only screen and (min-width: 601px) {
+      img {
+        width: 800px;
+        height: auto;
+      }
+    
+    p {
+      width: 100%;
+      height: auto;
+    }
+      
+  }
+  
+  #contact_info p {
+    text-align: left;
+    display: block;
+    position: absolute;
+    width: 12%;
+    top: 70%;
+    right: 5%;
+    font-family: "Oxygen", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  }
+    
+   #about_me p:first-child {
+    text-align: left;
+     display: block;
+     position: absolute;
+     width: 30%;
+     top: 84%;
+    left: 28%;
+      font-family: "Oxygen", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  }
+  
+  #contact_info h2{
+    position: absolute;
+    top: 60%;
+    right: 10%;
+  }
+ 
+  
+  .circle {
+    position: absolute;
+    display: inline;
+    height: 600px;
+    width: 600px;
+    background-color: #b366ff;
+    border-radius: 50%;
+    top: -200px;
+    left: 925px;
+    z-index: -1;
+  }
+  
+  .circle_2 {
+    position: absolute;
+    display: inline;
+    height: 400px;
+    width: 400px;
+    background-color: #b366ff;
+    border-radius: 50%;
+    left: -35px;
+    top: 500px;
+  }
+  
+  .circle_3 {
+    position: absolute;
+    display: inline;
+    height: 800px;
+    width: 800px;
+    background-color: #b366ff;
+    border-radius: 50%;
+    left: 500px;
+    top: 500px;
+  }
+  
+  .circle_4 {
+    position: absolute;
+    display: inline;
+    height: 400px;
+    width: 400px;
+    background-color: #6600cc;
+    border-radius: 50%;
+    right: 24%;
+    top: 89%;
+    overflow: hidden;
+  }
+  
+  .circle_5 {
+    position: absolute;
+    display: block;
+    height: 450px;
+    width: 450px;
+    background-color: #d9b3ff;
+    border-radius: 50%;
+    right: -5%;
+    top: 55%;
+    overflow: hidden;
+  }
+  
+  li{
+    list-style-type: none;
+    position: absolute;
+    display: block;
+    top: 40%;
+    padding: 20px;
+    
+  }
+  
+  li a{
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    border: 3px solid;
+  }
+  
+  li a:hover{
+    background-color: #b366ff;
+     
+  }
+  
+</style>
+  
+</head>
+<body>
+  
+  <div id="homepage">
+    
+    <li>
+       <a href="/">Home Page</a>
+       <a href="/">Project 1</a>
+       <a href="/">Project 2</a>
+       <a href="/">Project 3</a>
+    </li>
+    
+
+  <div class="circle"> </div>
+    
+    <div class="circle_2"></div>
+    
+    <div class="circle_3"></div>
+      
+    <div class="circle_4"></div>
+      
+      <div class="circle_5"></div>
+   
+  
+  <div>
+    <h1> Clarissa <br> Chamberlain </h1>
+  </div>
+    
+    <p>
+      Hello! Bonjour! Welcome to my portfolio!
+      Feel free to click through the pages and check out some projects that I was very proud to be a part of.
+    </p>
+    
+    </div>
+  
+  <div id="about">
+  <div class="website">
+     
+    <p>
+    This website is a demonstration created for one of my classes! Everything that you see on screen has been entirely programmed by me. 
+    </p>
+  </div>
+    </div>
+  
+  <div id="about_me">
+    <div class="summary">
+      
+      <h2> About Me
+      </h2>
+      
+      <p>
+        I am a graphic designer/ illustrator pursuing my studies in Global Business and Digital Arts at the University of Waterloo. </p> <br>
+        <br>
+      <p>
+    As a multimedia artist, I am proficient in both digital and physical mediums. <br>
+        Over the years I have experimented with a vareity of different styles and mediums and am comfortable working with both modern and traditional tools. <br>
+      </p>
+      
+    </div>
+  </div>
+  
+  <div id="contact_info">
+    <div class="contact">
+      
+      <h2>
+        Contact Info
+      </h2>
+      <p>
+       c2chambe@uwaterloo.ca <br>
+        <br>
+        519-573-3434 <br>
+      </p>
+    </div>
+  </div>
+    
+</body>
+</html>
